@@ -1,0 +1,15 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: flb-metric
+  namespace: logging
+  labels:
+    k8s-app: flb-metric
+spec:
+  endpoints:
+  - targetPort: 2020
+    interval: 30s
+    path: /api/v1/metrics/prometheus
+  selector:
+    matchLabels:
+      k8s-app: flb-metric
