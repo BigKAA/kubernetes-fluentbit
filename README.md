@@ -11,4 +11,4 @@
 * 05-flb-ds-service.yaml - Service для доступа к метрикам fluentbit
 * 06-flb-sm.yaml - ServiceMonitor для PrometheusOperator.
 
-За основу были сипользованы файлы из проекта https://github.com/fluent/fluent-bit-kubernetes-logging
+За основу были использованы файлы из проекта https://github.com/fluent/fluent-bit-kubernetes-logging
